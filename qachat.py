@@ -34,7 +34,7 @@ else:
         st.session_state['chat_history'] = []
 
     input_text = st.text_input("Input: ", key="input")
-    submit = st.button("Ask the question")
+    submit = st.button("Generate resonse")
 
     if submit and input_text:
         response = get_gemini_response(input_text)
